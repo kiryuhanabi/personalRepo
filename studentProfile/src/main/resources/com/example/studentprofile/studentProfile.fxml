@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="493.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentprofile.StudentProfileController">
+   <children>
+      <Label layoutX="67.0" layoutY="57.0" text="Name" />
+      <Label layoutX="69.0" layoutY="102.0" text="ID" />
+      <Label layoutX="69.0" layoutY="153.0" text="DOB" />
+      <Label layoutX="322.0" layoutY="21.0" text="Student Profile" />
+      <Label layoutX="380.0" layoutY="57.0" text="Gender" />
+      <Label layoutX="380.0" layoutY="102.0" text="Nationality" />
+      <TextField fx:id="nameTextfield" layoutX="139.0" layoutY="53.0" />
+      <TextField fx:id="idTextfield" layoutX="140.0" layoutY="98.0" />
+      <DatePicker fx:id="dobDatePicker" layoutX="128.0" layoutY="149.0" />
+      <RadioButton fx:id="maleRadiobutton" layoutX="439.0" layoutY="57.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadiobutton" layoutX="541.0" layoutY="57.0" mnemonicParsing="false" text="Female" />
+      <ComboBox fx:id="nationalityCombobox" layoutX="452.0" layoutY="98.0" prefWidth="150.0" />
+      <Button layoutX="483.0" layoutY="158.0" mnemonicParsing="false" onAction="#createOnAction" text="Create" />
+      <TextArea fx:id="displayTextarea" layoutX="45.0" layoutY="247.0" prefHeight="200.0" prefWidth="595.0" />
+   </children>
+</AnchorPane>
